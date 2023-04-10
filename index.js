@@ -3,8 +3,7 @@ const request = require("request-promise");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
-// const apiKey = "1b5c701f9fcd3edff1f0001c34e533ae";
+d;
 const baseUrl = `http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`;
 
 const generateNewUrl = (apiKey) =>
@@ -13,7 +12,6 @@ const generateNewUrl = (apiKey) =>
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  //this is what we send back when somebody is visiting the aforementioned url
   res.send("welcome to amazon scraper");
 });
 
